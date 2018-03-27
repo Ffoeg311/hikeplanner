@@ -5,7 +5,7 @@ class HikesController < ApplicationController
   # GET /hikes
   # GET /hikes.json
   def index
-    @hikes = Hike.all
+    @hikes = current_user.hikes
   end
 
   # GET /hikes/1
@@ -70,6 +70,6 @@ class HikesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def hike_params
-      params.require(:hike).permit(:link, :description, :commute_hours, :title, :location, :nearest_town)
+      params.require(:hike).permit(:link, :description, :commute_hours, :title, :location, :nearest_town).merge(user: current_user)
     end
 end
