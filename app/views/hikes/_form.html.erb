@@ -1,0 +1,47 @@
+<%= form_for(hike) do |f| %>
+  <% if hike.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(hike.errors.count, "error") %> prohibited this hike from being saved:</h2>
+
+      <ul>
+      <% hike.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :link %>
+    <%= f.text_field :link %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :commute_hours %>
+    <%= f.number_field :commute_hours %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nearest_town %>
+    <%= f.text_field :nearest_town %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @hike.link %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @hike.description %>
+</p>
+
+<p>
+  <strong>Commute hours:</strong>
+  <%= @hike.commute_hours %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @hike.title %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @hike.location %>
+</p>
+
+<p>
+  <strong>Nearest town:</strong>
+  <%= @hike.nearest_town %>
+</p>
+
+<%= link_to 'Edit', edit_hike_path(@hike) %> |
+<%= link_to 'Back', hikes_path %>
