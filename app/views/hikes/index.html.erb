@@ -5,8 +5,7 @@
 <table class="table table-hover table-striped">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Link</th>
+      <th>Title</th>      
       <th>Commute hours</th>
       <th>Location</th>
       <th>Nearest town</th>
@@ -17,9 +16,8 @@
   <tbody>
     <% @hikes.each do |hike| %>
       <tr>
-        <td><%= hike.title %></td>
         <td>
-          <%= link_to hike.link, "http://#{hike.link}" %>
+          <%= link_to link.title, "http://#{hike.link}" %>
 
         </td>
         <td><%= hike.commute_hours %></td>
