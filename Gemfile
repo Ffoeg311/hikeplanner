@@ -49,3 +49,4 @@ group :test do
   gem 'launchy'
   gem 'selenium-webdriver'
 end
+gem 'jquery-datatables-rails', '~> 3.4.0'
