@@ -93,6 +93,8 @@ GEM
     faker (1.8.7)
       i18n (>= 0.7)
     ffi (1.9.23)
+    font-awesome-rails (4.7.0.3)
+      railties (>= 3.2, < 5.2)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     hub (1.12.4)
@@ -272,6 +274,7 @@ DEPENDENCIES
   devise
   factory_bot_rails
   faker
+  font-awesome-rails
   hub
   jbuilder (~> 2.5)
   jquery-datatables-rails (~> 3.4.0)

@@ -1,10 +1,11 @@
 FactoryBot.define do
   factory :hike do
-    link "MyString"
-    description "MyString"
-    commute_hours 1
-    title "MyString"
-    location "MyString"
-    nearest_town "MyString"
+    link { Faker::Internet.url }
+    description { Faker::Lorem.paragraph }
+    commute_hours { Faker::Number.between(0, 20) }
+    title { Faker::StarWars.planet }
+    location { Faker::Address.city }
+    nearest_town { Faker::Address.city }
+    association :user, factory: :user
   end
 end

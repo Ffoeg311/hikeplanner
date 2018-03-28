@@ -32,6 +32,7 @@ function applicationReady() {
 }
 
 function initDataTable(){
+  console.log('datatable')
   var dataTable = $('.datatable').DataTable({
     paging: false,
     searching: false,

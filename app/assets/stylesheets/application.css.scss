@@ -12,5 +12,21 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
  */
+
+.favicon-link { 
+  padding-left: 10px;
+  padding-right: 10px;
+  a:hover { 
+    background-color: transparent; 
+    text-decoration: none; 
+  }
+}
+
+.float-right {
+  float: right;
+}
+
+
