@@ -39,6 +39,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'sqlite3'
+  gem 'faker'
 end
 group :production do
   gem 'pg', '~> 0.21.0'
@@ -49,3 +50,5 @@ group :test do
   gem 'launchy'
   gem 'selenium-webdriver'
 end
+gem 'jquery-datatables-rails', '~> 3.4.0'
+gem "font-awesome-rails"

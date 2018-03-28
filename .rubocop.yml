@@ -1,10 +1,32 @@
 AllCops:
-  RunRailsCops: true
-  Include:
-    - '**/Gemfile'
-    - '**/Rakefile'
   Exclude:
    - 'bin/*'
    - 'db/seeds.rb'
    - 'db/schema.rb'
    - 'vendor/bundle/**/*'
+ClassAndModuleChildren:
+ EnforcedStyle: compact
+Documentation:
+ Enabled: false
+Naming/VariableNumber:
+  Enabled: false
+Metrics/LineLength:
+ Max: 100
+Metrics/ModuleLength:
+  Max: 200
+Metrics/AbcSize:
+ Max: 30
+Style/SafeNavigation:
+  Enabled: false
+Style/Next:
+  Enabled: false
+Style/NumericLiteralPrefix:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/GlobalVars:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
